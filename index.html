@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>맞춤법 퀴즈</title>
+  <link rel="stylesheet" href="style.css">
+  <style type="text/css">
+    @font-face {
+font-family: 'NanumBarunpen';
+src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_two@1.0/NanumBarunpen.woff') format('woff');
+font-weight: normal;
+font-style: normal;
+}
+</style>
+</head>
+<body>
+  <div class="container">
+    <h1 class="title">맞춤법 퀴즈</h1>
+    <button onclick="startQuiz()" class="start-button">시작하기</button>
+    <div class="question-wrapper" style="display: none;">
+      <p class="question"></p>
+      <div class="answer-buttons"></div>
+    </div>
+    <div class="result-wrapper" style="display: none;">
+      <p class="result"></p>
+      <button onclick="showNextQuestion()" class="next-question-button">다음 문제</button>
+      <button onclick="showFinalResult()" class="result-complete-button" style="display: none;">결과 확인</button>
+    </div>
+    <div class="final-result-wrapper" style="display: none;">
+      <h2>퀴즈 결과</h2>
+      <p>맞은 문제 수: <span class="correct-count"></span></p>
+      <p>틀린 문제 수: <span class="incorrect-count"></span></p>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
